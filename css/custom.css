@@ -31,12 +31,19 @@
 .underline {
   border-bottom: 2px solid #fff;
 }
+
+/* Values + Categories
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.values, .categories {
+  background-image: url('../images/values-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
 /* Values
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .values {
-  background-image: url('../images/values-bg.jpg');
-  background-size: cover;
-  color: #fff;
   padding-bottom: 5rem;
 }
 .value-multiplier {
@@ -59,11 +66,6 @@
 
 /* Categories
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.categories {
-  background-image: url('../images/values-bg.jpg');
-  background-size: cover;
-  color: #fff;
-}
 .categories .section-description {
   margin-bottom: 4rem;
 }
