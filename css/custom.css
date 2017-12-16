@@ -1,7 +1,9 @@
+
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button {
   border-radius: 10px;
+  filter:invert(1);
 }
 
 /* Sections
@@ -72,6 +74,8 @@
 form {
   margin: 5ex;
   padding: 2ex;
+  filter: invert(90%);
+  color: red;
 }
 form input, form select, form textarea {
   color: #444;
@@ -93,14 +97,15 @@ form input, form select, form textarea {
     top: -7rem;
     z-index: 3;
   }
-  .phone + .phone {
+  /*
+  .phone {
     display: block;
     max-height: 338px;
     max-width: 73.8%;
     right: 0;
     top: -6rem;
     z-index: 2;
-  }
+  } */
   .hero-heading {
     font-size: 2.4rem;
   }
@@ -110,15 +115,13 @@ form input, form select, form textarea {
 @media (min-width: 750px) {
   .hero {
     height: 190px;
+    padding: 16rem 0 14rem;
   }
   .hero-heading {
     font-size: 2.6rem;
   }
   .section {
     padding: 14rem 0 15rem;
-  }
-  .hero {
-    padding: 16rem 0 14rem;
   }
   .section-description {
     max-width: 60%;
@@ -130,10 +133,11 @@ form input, form select, form textarea {
     right: 5rem;
     max-height: 510px;
   }
+  /* }
   .phone + .phone {
     top: -12rem;
     max-height: 472px;
-  }
+  } */
   .categories {
     padding: 15rem 0 8rem;
   }
@@ -152,10 +156,18 @@ form input, form select, form textarea {
   }
   .phone {
     top: -16rem;
-    max-height: 615px;
-  }
+    max-height: 615px;}
+  /* }
   .phone + .phone {
     top: -14rem;
     max-height: 570px;
-  }
+  } */
+}
+.tr {
+  background-size: cover;
+  background-image: url('../images/unicorn.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  height: 20%;
+  width: 100%;
 }

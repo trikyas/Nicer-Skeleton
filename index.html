@@ -10,13 +10,13 @@
   <!-- Mobile Specific Metas –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css" />
   <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css"> <!-- don't touch this -->
+  <link rel="stylesheet" href="css/normalize.css" /> <!-- don't touch this -->
   <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/skeleton.css"> <!-- don't touch this -->
+  <link rel="stylesheet" href="css/skeleton.css" /> <!-- don't touch this -->
   <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/custom.css"> <!-- EDIT THIS -->
+  <link rel="stylesheet" href="css/custom.css" /> <!-- EDIT THIS -->
   <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!--link rel="stylesheet" href="css/fonts.css"--> <!-- remove this -->
 
@@ -25,7 +25,7 @@
   <!-- Scripts –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
 </head>
 <body>
   <!-- Primary Page Layout –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -39,7 +39,7 @@
           <a class="button button-primary" href="https://github.com/trikyas/Nicer-Skeleton/archive/master.zip" target="_blank">Download Now!</a>
         </div>
         <div class="one-half column phones">
-          <img class="phone" src="images/unicorn.jpg">
+          <img class="phone" src="./images/unicorn.jpg" alt="Boo"/>
         </div>
       </div>
     </div>
@@ -49,8 +49,8 @@
       <div class="row">
         <div class="one-third column value">
           <h2 class="value-multiplier">75%</h2>
-          <h5 class="value-heading">What I know</h5>
-          <p class="value-description">About 75% of what I know. I actually taught myself. If you want a website like this. Contact me. It's free!</p>
+          <h5 class="value-heading">How I know</h5>
+          <p class="value-description">About 75% of what I know. I actually taught myself. If you want this boilerplate. Go for it! It's free!</p>
         </div>
         <div class="one-third column value">
           <h2 class="value-multiplier">90%</h2>
@@ -59,8 +59,8 @@
         </div>
         <div class="one-third column value">
           <h2 class="value-multiplier">100%</h2>
-          <h5 class="value-heading">of code languages</h5>
-          <p class="value-description">I love CSS but I am firmiliar with PHP / MySQLi , Node.js / Express.js / and many more, Ruby, Python and others.</p>
+          <h5 class="value-heading">Why I do</h5>
+          <p class="value-description">To see that tiny moment of enjoyment in another persons face. That smile and spark. I love seeing that.</p>
         </div>
       </div>
     </div>
@@ -77,37 +77,42 @@
       <h3 class="section-heading">Random Images</h3>
       <p class="section-description">Here are some placeholders. I suggest exploring a solution to serving different images based on device size and needs.</p>
       <div class="row">
-        <div class="one-half column category">
+        <div class="one-third column category">
           <img class="u-max-full-width" src="images/placeholder.png">
         </div>
-        <div class="one-half column category">
+        <div class="one-third column category">
+          <img class="u-max-full-width" src="images/placeholder.png">
+        </div>
+        <div class="one-third column category">
           <img class="u-max-full-width" src="images/placeholder.png">
         </div>
       </div>
     </div>
   </div>
-  <form>
+  <form method="post" action="/">
+    <h1>Contact</h1>
     <div class="row">
       <div class="one-half column">
         <label for="exampleEmailInput">Your email</label>
-        <input class="u-full-width" type="email" placeholder="test@mybox.com" id="exampleEmailInput">
+        <input class="u-full-width" type="email" placeholder="test@mybox.com" id="exampleEmailInput" name="email">
       </div>
       <div class="one-half column">
         <label for="exampleRecipientInput">Reason for contacting</label>
         <select class="u-full-width" id="exampleRecipientInput">
-          <option value="Option 1">Questions</option>
-          <option value="Option 2">Admiration</option>
-          <option value="Option 3">Can I get your number?</option>
+          <option value="Option 0" name="opt1"></option>
+          <option value="Option 1" name="opt2">Question</option>
+          <option value="Option 2" name="opt3">Love your work!</option>
+          <option value="Option 3" name="opt4">Can I get your help?</option>
         </select>
       </div>
     </div>
     <label for="exampleMessage">Message</label>
-    <textarea class="u-full-width" placeholder="Hi Chad …" id="exampleMessage"></textarea>
+    <textarea class="u-full-width" placeholder="Hi Chad …" id="exampleMessage" name="message"></textarea>
     <label class="example-send-yourself-copy">
-      <input type="checkbox">
+      <input type="checkbox" name="send-self">
       <span class="label-body">Send a copy to yourself</span>
       </label>
-      <input class="button-primary" type="submit" value="Submit">
+      <input class="button-primary" type="submit" value="Submit" name="submit">
   </form>
   <div class="section categories">
     <div class="container">
@@ -115,6 +120,42 @@
       <p class="section-description">The Unicorn is a cool little thing. He guides me through code and mind altering experiences. Funly enough.. He only seems to want to help me when I am having a mind altering experience.</p>
     </div>
   </div>
+
+
+
+  <div class="section get-help">
+    <div class="container">
+      <h3 class="section-heading">Empty</h3>
+      <p class="section-description">Simply Download the .zip file. Unzip where you wish on your mac/pc. open the unzipped folder-master and then right-click on index.html and open with your favourite editor. The css mainly used in this is Skeleton.css and custom.css is where the "custom" styling is being done. It is basic but effective!<br />Enjoy and Happy Coding!  </p>
+      <a class="button button-primary" href="https://github.com/trikyas/Nicer-Skeleton/archive/master.zip" target="_blank">Download Now!</a>
+    </div>
+  </div>
+  <div class="section values">
+    <div class="container">
+      <div class="row">
+        <div class="one-third column value tr">
+          <h2 class="value-multiplier">100%</h2>
+          <h5 class="value-heading">Chad</h5>
+          <p class="value-description">Look up here, I'm in heaven. Don't tell your papa or he'll get us locked up in fright! Don't kid yourself they belong to you.</p>
+        </div>
+        <div class="one-third column value tr">
+          <h2 class="value-multiplier">FREE</h2>
+          <h5 class="value-heading">Trikyas</h5>
+          <p class="value-description">Wake up in the wrong town, boy you really get around. In this age of grand illusion, you walked into my life out of my dreams.</p>
+        </div>
+        <div class="one-third column value tr">
+          <h2 class="value-multiplier">DOM</h2>
+          <h5 class="value-heading">Mooney</h5>
+          <p class="value-description">Look up here, I'm in heaven. Don't tell your papa or he'll get us locked up in fright! Don't kid yourself they belong to you.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+Footer
+ -->
   <div class="section hero">
     <div class="container">
       <div class="row">
