@@ -4,7 +4,6 @@
   transition: filter .75s ease-in-out;
 }
 .button:hover {
-  border-radius: 10px;
   filter:invert(0);
 }
 /* main */
