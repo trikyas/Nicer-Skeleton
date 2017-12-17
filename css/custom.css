@@ -1,8 +1,13 @@
 .button {
   border-radius: 10px;
   filter:invert(1);
-  color: red;
+  transition: filter .75s ease-in-out;
 }
+.button:hover {
+  border-radius: 10px;
+  filter:invert(0);
+}
+/* main */
 .section {
   padding: 8rem 0 7rem;
   text-align: center;
@@ -25,6 +30,7 @@
 .underline {
   border-bottom: 2px solid #fff;
 }
+/* % value section */
 .values, .categories {
   background-image: url('../images/values-bg.jpg');
   background-size: cover;
@@ -52,6 +58,7 @@
 .categories .section-description {
   margin-bottom: 4rem;
 }
+/* Form */
 form {
   margin: 5ex;
   padding: 2ex;
