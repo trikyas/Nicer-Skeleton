@@ -1,13 +1,8 @@
-
-/* Shared
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button {
   border-radius: 10px;
   filter:invert(1);
+  color: red;
 }
-
-/* Sections
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
   padding: 8rem 0 7rem;
   text-align: center;
@@ -16,9 +11,6 @@
 .section-description {
   margin-bottom: 1.2rem;
 }
-
-/* Hero
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .phones {
   position: relative;
 }
@@ -33,9 +25,6 @@
 .underline {
   border-bottom: 2px solid #fff;
 }
-
-/* Values + Categories
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .values, .categories {
   background-image: url('../images/values-bg.jpg');
   background-size: cover;
@@ -43,8 +32,6 @@
   background-repeat: no-repeat;
   color: #fff;
 }
-/* Values
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .values {
   padding-bottom: 5rem;
 }
@@ -59,15 +46,9 @@
   font-weight: 300;
   opacity: .8;
 }
-
-/* Help
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .get-help {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #333;
 }
-
-/* Categories
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .categories .section-description {
   margin-bottom: 4rem;
 }
@@ -97,7 +78,6 @@ form input, form select, form textarea {
     top: -7rem;
     z-index: 3;
   }
-  /*
   .phone {
     display: block;
     max-height: 338px;
@@ -105,7 +85,7 @@ form input, form select, form textarea {
     right: 0;
     top: -6rem;
     z-index: 2;
-  } */
+  }
   .hero-heading {
     font-size: 2.4rem;
   }
@@ -133,11 +113,10 @@ form input, form select, form textarea {
     right: 5rem;
     max-height: 510px;
   }
-  /* }
   .phone + .phone {
     top: -12rem;
     max-height: 472px;
-  } */
+  }
   .categories {
     padding: 15rem 0 8rem;
   }
@@ -156,18 +135,21 @@ form input, form select, form textarea {
   }
   .phone {
     top: -16rem;
-    max-height: 615px;}
-  /* }
+    max-height: 615px;
+  }
   .phone + .phone {
     top: -14rem;
     max-height: 570px;
-  } */
+  }
 }
 .tr {
   background-size: cover;
-  background-image: url('../images/unicorn.jpg');
+  background-image: url('../images/takeOff.png');
   background-position: center;
   background-attachment: fixed;
   height: 20%;
   width: 100%;
+}
+.unishadow {
+  filter: drop-shadow(2px 2px 2px #000);
 }
